@@ -43,7 +43,7 @@ exports.group = () =>{
 	}
 
 exports.wait = () =>{
-	return`Wait Onii-Chann`
+	return`Loading...`
 	}
 exports.ok = () =>{
 	return`Sukses!`
