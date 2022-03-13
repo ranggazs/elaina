@@ -1567,7 +1567,7 @@ await elaina.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt
 break
 case 'sewabot':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			reply('http://wa.me/62895410068780?text=Sewa+Bot') 		
+			reply('http://wa.me/6285157770338?text=Sewa+Bot') 		
 break
 case 'kick':
 			if (!isGroup) return reply(lang.group())
@@ -1815,24 +1815,24 @@ computer = 'gunting';
 computer = 'kertas';
 }
 if (q == computer) {
-reply(`*Subscribe Yt RflBotz Ofc*\n\nPertandingan Seri!`)
+reply(`*AlfaBot*\n\nPertandingan Seri!`)
 } else if (q == 'batu') {
 if (computer == 'gunting') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Batu\n• Computer: Gunting\n\nCongrats You win!`)
+reply(`*AlfaBot*\n\n• You: Batu\n• Computer: Gunting\n\nCongrats You win!`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Batu\n• Computer: Kertas\n\nYou lose:(`)
+reply(`*AlfaBot*\n\n• You: Batu\n• Computer: Kertas\n\nYou lose:(`)
 }
 } else if (q == 'gunting') {
 if (computer == 'batu') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Gunting\n• Computer: Batu\n\nYou lose:(`)
+reply(`*AlfaBot*\n\n• You: Gunting\n• Computer: Batu\n\nYou lose:(`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Gunting\n• Computer: Kertas\n\nCongrats You win!`)
+reply(`*AlfaBot*\n\n• You: Gunting\n• Computer: Kertas\n\nCongrats You win!`)
 }
 } else if (q == 'kertas') {
 if (computer == 'batu') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Kertas\n• Computer: Batu\n\nCongrats You win!`)
+reply(`*AlfaBot*\n\n• You: Kertas\n• Computer: Batu\n\nCongrats You win!`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Kertas\n• Computer: Gunting\n\nYou lose:(`)
+reply(`*AlfaBot*\n\n• You: Kertas\n• Computer: Gunting\n\nYou lose:(`)
 }
 }
 }
