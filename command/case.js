@@ -401,13 +401,13 @@ module.exports = elaina = async (elaina, mek) => {
 		if (!mek.key.fromMe && global.self === true) return
 //colong aja bang, ingat jgn asal colong ntr sc lu error
 switch (command) {
-case 'menu': case 'help': case 'elaina':
+case 'menu': case 'help': case 'Alfa':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 				sendButLocation(from, lang.menu(prefix, salam, pushname), '© ' + ownername, thumbnail, [{buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},{buttonId: '.infobot', buttonText:{displayText: 'Infobot'}, type: 1}], {quoted: mek})
 				break
 case 'infobot':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			reply('Update bot selanjutnya silahkan cek YouTube RflBotz ofc')
+			reply('bot alfa')
 break
 case 'owner':{
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
@@ -638,26 +638,44 @@ case 'faktaunik':
 faktaunik = await fetchJson(`https://api.lolhuman.xyz/api/random/faktaunik?apikey=${lolkey}`)
 reply(`*Taukah kamu ternyata*\n${faktaunik.result}`) 
 break
-case 'wikipedia':
-if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Kak\nContoh: ${prefix + command} Tahu`)
-query = args.join(" ")
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${lolkey}`)
-get_result = get_result.result
-reply(get_result)
+case 'wikipedia':
+
+if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Kak\nContoh: ${prefix + command} Tahu`)
+
+query = args.join(" ")
+
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${lolkey}`)
+
+get_result = get_result.result
+
+reply(get_result)
+
 break
-case 'translate':
-if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Kak\nContoh: ${prefix + command} en Good Morning`)
-kode_negara = args[0]
-args.shift()
-ini_txt = args.join(" ")
+case 'translate':
+
+if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Kak\nContoh: ${prefix + command} en Good Morning`)
+
+kode_negara = args[0]
+
+args.shift()
+
+ini_txt = args.join(" ")
+
 get_result = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/id?apikey=${lolkey}`)
-get_result = get_result.result
-init_txt = `From : ${get_result.from}\n`
-init_txt += `To : ${get_result.to}\n`
-init_txt += `Original : ${get_result.original}\n`
-init_txt += `Translated : ${get_result.translated}\n`
-init_txt += `Pronunciation : ${get_result.pronunciation}\n`
-reply(init_txt)
+get_result = get_result.result
+
+init_txt = `From : ${get_result.from}\n`
+
+init_txt += `To : ${get_result.to}\n`
+
+init_txt += `Original : ${get_result.original}\n`
+
+init_txt += `Translated : ${get_result.translated}\n`
+
+init_txt += `Pronunciation : ${get_result.pronunciation}\n`
+
+reply(init_txt)
+
 break
 case 'katabijak':
 anu = await fetchJson(`https://api.lolhuman.xyz/api/random/katabijak?apikey=${lolkey}`)
