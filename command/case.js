@@ -405,9 +405,35 @@ case 'menu': case 'help': case 'Alfa':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 				sendButLocation(from, lang.menu(prefix, salam, pushname), '© ' + ownername, thumbnail, [{buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},{buttonId: '.infobot', buttonText:{displayText: 'Infobot'}, type: 1}], {quoted: mek})
 				break
-case 'infobot':
+case 'list dm ml':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			reply('bot alfa')
+			reply('LIST DIAMOND MOBILE LEGENDS
+
+————————————————
+
+86💎 Rp.21.000
+
+172💎 Rp.41.000
+
+257💎 Rp.61.000
+
+344💎 Rp.82.000
+
+429💎 Rp.103.000
+
+514💎 Rp.122.000
+
+706💎 Rp.164.000
+
+878💎 Rp.205.000
+
+963💎 Rp.226.000
+
+1050💎 Rp.249.000
+
+1220💎 Rp.289.000
+
+1412💎 Rp.329.000')
 break
 case 'owner':{
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
