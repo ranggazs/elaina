@@ -67,7 +67,7 @@ exports.menu = (prefix, salam, pushname) =>{
 *List Menu*
 ❏ ${prefix}menu
 ❏ ${prefix}help
-❏ ${prefix}elaina
+❏ ${prefix}Alfa
 ❏ ${prefix}sewabot
 ❏ ${prefix}bot
 
