@@ -409,7 +409,7 @@ case 'listdmml':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
 			reply('LIST DIAMOND MOBILE LEGENDS
 
-————————————————
+
 
 86💎 Rp.21.000
 
